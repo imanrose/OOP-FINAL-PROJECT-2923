@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Meal Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="plan-page">
+
+  <div class="plan-container">
+    <h2 id="mealTitle">Plan Your Sunnah Meal</h2>
+
+    <label for="mealDate">Select Date</label>
+    <input type="date" id="mealDate">
+
+    <label for="mealNote">Add Notes</label>
+    <textarea id="mealNote" rows="5" placeholder="Write your meal notes here..."></textarea>
+
+    <div style="text-align:center;">
+      <button id="savePlanBtn" class="plan-btn">Save Plan</button>
+      <button id="backBtn" class="plan-btn" style="background-color:#777;">Back</button>
+    </div>
+
+    <!-- Success message -->
+    <p id="successMsg" style="color: green; text-align:center; font-weight: bold; display: none;">
+       Successfully saved!
+    </p>
+  </div>
+
+  <script src="meal.js"></script>
+</body>
+</html>

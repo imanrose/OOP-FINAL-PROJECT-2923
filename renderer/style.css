@@ -1,0 +1,346 @@
+/* 🌿 General Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* 🌸 Header & Banner */
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 15px 0;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 320px; /* ⬆️ slightly bigger banner */
+  object-fit: cover;
+  border-bottom: 4px solid #f5a623;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.75;
+}
+
+.banner h1,
+.banner p {
+  position: relative;
+  z-index: 1;
+  color: white;
+  margin: 0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.banner h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* 🌿 Home Image Section (Hadith) */
+.home-image {
+  margin: 20px auto;
+  width: 85%;
+  max-width: 700px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.home-image img {
+  width: 100%;
+  height: 280px; /* ⬆️ bigger image height */
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* 🔍 Search Bar */
+.search-container {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  padding: 12px 15px;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* ❤️ Buttons (Search, View, Home, Add to Plan) */
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #d32f2f; /* red theme */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background-color: #b71c1c;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* 🍱 Recipe Layout */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.recipe-box {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #ffe5e0;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.recipe-box:hover {
+  transform: scale(1.03);
+}
+
+.recipe-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 📅 Plan & Calendar Boxes */
+.plan-item,
+.calendar-box {
+  margin: 15px auto;
+  width: 85%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff0e6, #ffe5d0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  border-left: 6px solid #f5a623;
+}
+
+.calendar-box input[type="date"],
+.calendar-box input[type="text"],
+.calendar-box textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.calendar-box button {
+  margin-top: 40px;
+}
+
+/* 🏠 Home Button */
+.home-btn {
+  margin-top: 20px;
+}
+
+/* ✏️ Edit Page */
+.edit-page {
+  background-color: #fff8f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.edit-form {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.edit-form button {
+  border: none;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+  .search-container input[type="text"] {
+    width: 70%;
+  }
+
+  .banner {
+    height: 290px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .home-image img {
+    height: 220px;
+  }
+}
+
+/* 🍯 Meal Plan Page */
+.plan-page {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff8f0, #ffe0cc);
+  padding: 30px;
+  text-align: center;
+}
+
+.plan-container {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.plan-container h2 {
+  color: #b71c1c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.plan-container label {
+  font-weight: 600;
+  display: block;
+  margin-top: 15px;
+  color: #555;
+}
+
+.plan-container input[type="date"],
+.plan-container textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 💫 Plan Buttons */
+.plan-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d32f2f;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.plan-btn:hover {
+  background-color: #b71c1c;
+}
+/* 🌿 Sunnah Meal Page */
+.sunnah-page {
+  background-color: #e6f4ea;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #2f4f2f;
+  padding: 30px;
+}
+
+.sunnah-page h1 {
+  font-size: 28px;
+  color: #1a421a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-style: italic;
+  color: #3b6e3b;
+  margin-bottom: 30px;
+}
+
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ingredient {
+  background: #f8fff8;
+  border-radius: 12px;
+  padding: 15px;
+  width: 150px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.ingredient:hover {
+  transform: scale(1.05);
+}
+
+.ingredient img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ingredient p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #2f5e2f;
+}

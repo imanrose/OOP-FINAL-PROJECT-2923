@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunnah Meal Plan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--  BANNER SECTION -->
+  <div class="banner">
+    <img src="banner.jpg" alt="Sunnah Meal Banner" class="banner-img">
+  </div>
+
+  <!-- Title below banner -->
+  <div class="banner-text">
+    <h1>Discover Sunnah-Inspired Meals</h1>
+    <p>Eat healthy, eat like the Prophet Muhammad صلى الله عليه وسلم</p>
+  </div>
+
+  <!--  SEARCH AREA -->
+  <div class="search-container">
+    <input type="text" id="mealInput" placeholder="Enter Sunnah food (e.g. dates, honey, milk)">
+    <button id="searchBtn" class="nav-btn">Search</button>
+    <!-- Keep the same id used in renderer/index.js -->
+    <button id="sunnahBtn">Suggested Sunnah Meal</button>
+  </div>
+
+  <!--  HOME IMAGE -->
+  <div class="home-image">
+    <img src="hadith.jpg" alt="Delicious Sunnah Meals">
+  </div>
+
+  <!--  SEARCH RESULTS -->
+  <div id="result" class="recipe-grid"></div>
+
+  <!--  NAVIGATION BUTTONS -->
+  <div class="button-container">
+    <button id="viewBtn" class="nav-btn">View Saved Meals</button>
+    <button id="homeBtn" class="nav-btn" style="display:none;">Home</button>
+  </div>
+
+  <!-- Load the renderer JS (this contains the search + sunnah button listeners) -->
+  <script src="index.js"></script>
+</body>
+</html>
